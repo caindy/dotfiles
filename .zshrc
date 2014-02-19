@@ -55,4 +55,4 @@ alias hello="cd /Users/ca/Hello/Hello-Server/hello"
 export EDITOR="mvim"
 export GIT_EDITOR='mvim'
 
-
+source /usr/local/bin/aws_zsh_completer.sh
