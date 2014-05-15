@@ -56,3 +56,10 @@ export EDITOR="mvim"
 export GIT_EDITOR='mvim'
 
 source /usr/local/bin/aws_zsh_completer.sh
+
+export SBT_OPTS=-XX:MaxPermSize=256m
+
+# OPAM configuration
+. /Users/ca/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+eval `opam config env`
