@@ -13,6 +13,11 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'b4winckler/vim-objc'
 Bundle 'jspahrsummers/vim-gitgutter'
+Bundle 'pangloss/vim-javascript'
+Bundle 'editorconfig/editorconfig-vim'
+Bundle 'digitaltoad/vim-jade'
+Bundle 'gkz/vim-ls'
+Bundle 'tpope/vim-fugitive'
 
 filetype plugin indent on
 
@@ -21,6 +26,7 @@ set background=dark
 colorscheme solarized
 
 map <C-n> :NERDTreeToggle<CR>
+cmap w!! w !sudo tee > /dev/null %
 
 let s:ocamlmerlin=substitute(system('opam config var share'),'\n$','','''') .  "/ocamlmerlin"
 execute "set rtp+=".s:ocamlmerlin."/vim"
