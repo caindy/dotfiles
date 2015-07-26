@@ -18,6 +18,9 @@ Bundle 'editorconfig/editorconfig-vim'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'gkz/vim-ls'
 Bundle 'tpope/vim-fugitive'
+Bundle 'Shutnik/jshint2.vim'
+Bundle 'scrooloose/syntastic'
+Bundle 'fsharp/vim-fsharp'
 
 filetype plugin indent on
 
@@ -31,3 +34,12 @@ cmap w!! w !sudo tee > /dev/null %
 let s:ocamlmerlin=substitute(system('opam config var share'),'\n$','','''') .  "/ocamlmerlin"
 execute "set rtp+=".s:ocamlmerlin."/vim"
 execute "set rtp+=".s:ocamlmerlin."/vimbufsync"
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
