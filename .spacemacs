@@ -19,19 +19,22 @@
      ;; ----------------------------------------------------------------
      auto-completion
      better-defaults
+     clojure
      dash
      emacs-lisp
      erlang
      elixir
+     eyebrowse
      fsharp
      javascript
-      (git :variables
+     (git :variables
            git-magit-status-fullscreen t
            git-enable-github-support t
            git-gutter-use-fringe t)
      markdown
      org
      osx
+     semantic
      smex
      (shell :variables
             shell-default-shell 'multi-term
@@ -68,10 +71,10 @@ before layers configuration."
    ;; directory. A string value must be a path to an image format supported
    ;; by your Emacs build.
    ;; If the value is nil then no banner is displayed.
-   dotspacemacs-startup-banner 'official
+   dotspacemacs-startup-banner nil
    ;; List of items to show in the startup buffer. If nil it is disabled.
    ;; Possible values are: `recents' `bookmarks' `projects'."
-   dotspacemacs-startup-lists '(recents projects)
+   dotspacemacs-startup-lists '(recents bookmarks projects)
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
@@ -129,7 +132,7 @@ before layers configuration."
    ;; A value from the range (0..100), in increasing opacity, which describes
    ;; the transparency level of a frame when it's active or selected.
    ;; Transparency can be toggled through `toggle-transparency'.
-   dotspacemacs-active-transparency 90
+   dotspacemacs-active-transparency 100
    ;; A value from the range (0..100), in increasing opacity, which describes
    ;; the transparency level of a frame when it's inactive or deselected.
    ;; Transparency can be toggled through `toggle-transparency'.
@@ -163,6 +166,12 @@ before layers configuration."
   "Configuration function.
  This function is called at the very end of Spacemacs initialization after
 layers configuration."
+  (progn
+    (setq tab-width 2)
+    (setq js-tab-width 2)
+    (setq clojure-enable-fancify-symbols t)
+    (add-hook 'text-mode-hook 'auto-fill-mode)
+  )
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
