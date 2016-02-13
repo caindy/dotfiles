@@ -19,13 +19,13 @@
      ;; ----------------------------------------------------------------
      auto-completion
      better-defaults
-     clojure
      dash
      emacs-lisp
      erlang
      elixir
      eyebrowse
      fsharp
+     haskell
      javascript
      (git :variables
            git-magit-status-fullscreen t
@@ -34,6 +34,7 @@
      markdown
      org
      osx
+     ranger
      semantic
      smex
      (shell :variables

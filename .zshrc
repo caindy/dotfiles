@@ -24,6 +24,9 @@ export EDITOR="vim"
 export GIT_EDITOR='vim'
 export SBT_OPTS=-XX:MaxPermSize=256m
 
+# assuming cabal-install
+export PATH="$HOME/Library/Haskell/bin:$PATH"
+
 . /Users/ca/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
 eval `opam config env`
