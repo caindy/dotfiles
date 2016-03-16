@@ -19,6 +19,7 @@
      ;; ----------------------------------------------------------------
      auto-completion
      better-defaults
+     csharp
      dash
      emacs-lisp
      erlang
