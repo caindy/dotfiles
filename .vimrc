@@ -3,25 +3,27 @@ filetype off
 :set tabstop=2 shiftwidth=2 expandtab
 set nu
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
 
-Bundle 'gmarik/vundle'
-Bundle 'kien/ctrlp.vim'
-Bundle 'elixir-lang/vim-elixir'
-Bundle 'scrooloose/nerdtree'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'b4winckler/vim-objc'
-Bundle 'jspahrsummers/vim-gitgutter'
-Bundle 'pangloss/vim-javascript'
-Bundle 'editorconfig/editorconfig-vim'
-Bundle 'digitaltoad/vim-jade'
-Bundle 'gkz/vim-ls'
-Bundle 'tpope/vim-fugitive'
-Bundle 'Shutnik/jshint2.vim'
-Bundle 'scrooloose/syntastic'
-Bundle 'fsharp/vim-fsharp'
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'scrooloose/nerdtree'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'b4winckler/vim-objc'
+Plugin 'jspahrsummers/vim-gitgutter'
+Plugin 'pangloss/vim-javascript'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'gkz/vim-ls'
+Plugin 'tpope/vim-fugitive'
+Plugin 'Shutnik/jshint2.vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'fsharp/vim-fsharp'
+
+call vundle#end()            " required
 filetype plugin indent on
 
 syntax enable

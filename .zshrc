@@ -14,7 +14,7 @@ TERM=xterm-256color
 plugins=(git osx pip pod vundle)
 
 source $ZSH/oh-my-zsh.sh
-source /usr/local/bin/aws_zsh_completer.sh
+#source /usr/local/bin/aws_zsh_completer.sh
 
 export PATH=~/Downloads/purescript:/usr/local/share/npm/bin:./node_modules/.bin:/Users/ca/.rvm/gems/ruby-1.9.3-p0/bin:/Users/ca/.rvm/gems/ruby-1.9.3-p0@global/bin:/Users/ca/.rvm/rubies/ruby-1.9.3-p0/bin:/Users/ca/.rvm/bin:/Users/ca/.gem/ruby/1.8/bin:/opt/nginx/sbin:/usr/local/bin:/usr/local/sbin:$PATH:
 
